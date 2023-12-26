@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.skin.SplitPaneSkin.Content?>
+<AnchorPane fx:id="anchor" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #222;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maxledlightingproject.PanelController" >
+    <children>
+        <ScrollPane fx:id="scrollPane" prefHeight="300" prefWidth="1400" style="-fx-background-color: #222;">
+            <content>
+                <Pane fx:id="pane" prefHeight="300" minWidth="1300" style="-fx-background-color: #222;">
+                    <HBox fx:id="left_hbox" layoutY="0.0" prefHeight="60.0"/>
+                    <HBox fx:id="right_hbox" layoutX="0" layoutY="200.0" prefHeight="60" />
+                </Pane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

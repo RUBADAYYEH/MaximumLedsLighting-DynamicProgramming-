@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maxledlightingproject.HelloController">
+  <children>
+    <Label layoutX="101.0" layoutY="82.0" prefHeight="55.0" prefWidth="467.0" style="-fx-background-color: #222;" text="How would you like to input ?" textFill="#f4efef">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <Button fx:id="fileBtn" layoutX="64.0" layoutY="169.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #464444; -fx-background-radius: 15;" text="Upload File" textFill="WHITE">
+      <font>
+        <Font size="14.0" />
+      </font></Button>
+    <Button fx:id="autoBtn" layoutX="204.0" layoutY="169.0" mnemonicParsing="false" onAction="#openFileChooser" prefHeight="32.0" prefWidth="138.0" style="-fx-background-color: #464444; -fx-background-radius: 15;" text="Auto Generate" textFill="#fcfcfc">
+      <font>
+        <Font size="14.0" />
+      </font></Button>
+    <Button fx:id="inputBtn" layoutX="362.0" layoutY="169.0" mnemonicParsing="false" onAction="#autoBtnClicked" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #464444; -fx-background-radius: 15;" text="Let me Insert" textFill="#fffcfc">
+      <font>
+        <Font size="14.0" />
+      </font></Button>
+    <TextField fx:id="numberTf" layoutX="27.0" layoutY="256.0" onAction="#inputBtnClicked" prefHeight="30.0" prefWidth="219.0" promptText="enter the number of leds" style="-fx-background-color: #464444;">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </TextField>
+    <Button fx:id="submitBtn" layoutX="274.0" layoutY="259.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" style="-fx-background-radius: 15; -fx-background-color: #e73737;" text="Submit" textFill="#efefef">
+      <font>
+        <Font size="14.0" />
+      </font></Button>
+    <TextField fx:id="textField" layoutX="27.0" layoutY="302.0" onAction="#inputBtnClicked" prefHeight="40.0" prefWidth="208.0" promptText="enter led number" style="-fx-background-color: rgba(231,112,112,0.44);">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </TextField>
+      <Button fx:id="addBtn" layoutX="274.0" layoutY="312.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-radius: 15; -fx-background-color: #ee4848;" text="Add" textFill="#efefef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitInputBtn" layoutX="375.0" layoutY="312.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-radius: 15; -fx-background-color: #e15e5e;" text="submit" textFill="#efefef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultLbl" layoutX="6.0" layoutY="358.0" prefHeight="30.0" prefWidth="403.0" textFill="WHITE" />
+  </children>
+</AnchorPane>
